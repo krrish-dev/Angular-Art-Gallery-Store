@@ -30,7 +30,7 @@ const routes: Routes = [
   {
     path: 'website',
     loadChildren: () =>
-      import('./website/website.module').then((m) => m.WebsitePagesModule),
+      import('./website/website.module').then((m) => m.WebsiteModule),
   },
 ];
 
