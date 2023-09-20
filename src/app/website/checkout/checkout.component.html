@@ -1,0 +1,34 @@
+  <!-- Left Side - Customer Information -->
+
+  <div class="checkout-container">
+    <div class="customer-info">
+      <h2>Customer Information</h2>
+      <form>
+        <mat-form-field class="form-group">
+          <mat-label>Name:</mat-label>
+          <input matInput type="text" id="customerName" name="customerName" [(ngModel)]="customerName" required />
+        </mat-form-field>
+        <mat-form-field class="form-group">
+          <mat-label>Email:</mat-label>
+          <input matInput type="email" id="customerEmail" name="customerEmail" [(ngModel)]="customerEmail" required />
+        </mat-form-field>
+        <mat-form-field class="form-group">
+          <mat-label>Phone:</mat-label>
+          <input matInput type="text" id="customerPhone" name="customerPhone" [(ngModel)]="customerPhone" required />
+        </mat-form-field>
+        <mat-form-field class="form-group">
+          <mat-label>Address:</mat-label>
+          <input matInput type="text" id="customerAddress" name="customerAddress" [(ngModel)]="customerAddress" required />
+        </mat-form-field>
+      </form>
+    </div>
+  </div>
+
+
+
+  <!-- Right Side - Order Details (Cart Summary) -->
+  <div class="order-details">
+<app-cart-summary [cartItems]="cartItems" [total]="calculateSubtotal()"></app-cart-summary>
+<button class="place-order-button" mat-raised-button color="primary" (click)="placeOrder()">Place Order</button>
+</div>
+

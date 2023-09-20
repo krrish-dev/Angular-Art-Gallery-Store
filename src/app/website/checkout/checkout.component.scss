@@ -1,0 +1,39 @@
+/* Style for the checkout container */
+.checkout-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Align the form to the top of the container */
+}
+
+/* Style for the customer info form */
+.customer-info {
+  width: 40%; /* Set the width of the form */
+  padding: 20px; /* Add padding for spacing */
+}
+
+/* Style for the form fields */
+.form-group {
+  width: 100%;
+  margin-bottom: 20px; /* Add space between form fields */
+}
+
+/* Style for form field labels */
+mat-label {
+  font-weight: bold; /* Make the labels bold */
+}
+/* Add these styles to your component's SCSS file */
+.order-details {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Horizontally center-align items */
+  justify-content: center; /* Vertically center-align items */
+  text-align: center; /* Center-align text within the container */
+
+  /* You can also add margin or padding if needed */
+}
+
+.place-order-button {
+  margin-top: 5px; /* Add margin to separate the button from other content */
+  margin-bottom: 5px;
+}
+

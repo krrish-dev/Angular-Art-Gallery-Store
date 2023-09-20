@@ -1,0 +1,21 @@
+/* cart-summary.component.scss */
+// @import '~@angular/material/prebuilt-themes/indigo-pink.css';
+
+
+/* Style for the cart summary card */
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+/* cart-summary.component.scss */
+
+mat-card.cart-summary {
+  width: 300px; /* Set the desired width */
+  background-color: rgb(235, 255, 255); /* Set the background color to aqua */
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+
+
