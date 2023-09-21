@@ -27,11 +27,7 @@ const routes: Routes = [
     loadChildren: () => import('./admin/admin-routing.module').then((m) => m.AdminRoutingModule),
 
   },
-  {
-    path: 'website',
-    loadChildren: () =>
-      import('./website/website.module').then((m) => m.WebsiteModule),
-  },
+
 ];
 
 @NgModule({
